@@ -43,6 +43,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="threePointsA"
                 android:background="@color/buttonColor"
                 android:text="+3 Points" />
 
@@ -51,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
+                android:onClick="twoPointsA"
                 android:layout_marginRight="24dp"
                 android:background="@color/buttonColor"
                 android:text="+2 Points" />
@@ -60,6 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
+                android:onClick="freeThrowA"
                 android:layout_marginRight="24dp"
                 android:background="@color/buttonColor"
                 android:text="Free throw" />
@@ -103,6 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
+                android:onClick="threePointsB"
                 android:layout_marginRight="24dp"
                 android:background="@color/buttonColor"
                 android:text="+3 Points" />
@@ -112,6 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="22dp"
+                android:onClick="twoPointsB"
                 android:layout_marginRight="22dp"
                 android:background="@color/buttonColor"
                 android:text="+2 Points" />
@@ -120,6 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
+                android:onClick="freeThrowB"
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="22dp"
                 android:background="@color/buttonColor"
@@ -130,9 +136,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/resetButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
+        android:onClick="resetScore"
         android:background="@color/buttonColor"
         android:text="Reset" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="kirimBang"
+        android:background="@color/buttonColor"
+        android:text="Kirim" />
 </RelativeLayout>
